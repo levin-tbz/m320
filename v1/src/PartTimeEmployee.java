@@ -8,6 +8,10 @@ public class PartTimeEmployee extends Employee {
         setHoursWorked(hoursWorked);
     }
 
+    public int calculateMonthlyPay() {
+        return hourlyRate * hoursWorked;
+    }
+
     public int getHourlyRate() {
         return hourlyRate;
     }

@@ -10,6 +10,10 @@ public class Intern extends Employee {
         setHoursWorked(hoursWorked);
     }
 
+    public int calculateMonthlyPay() {
+        return fixedMonthlyPay;
+    }
+
     public int getFixedMonthlyPay() {
         return fixedMonthlyPay;
     }

@@ -10,6 +10,10 @@ public class FullTimeEmployee extends Employee {
         setBonusEligible(bonusEligible);
     }
 
+    public int calculateMonthlyPay() {
+        return monthlySalary + (bonusEligible ? bonusAmount : 0);
+    }
+
     public int getMonthlySalary() {
         return monthlySalary;
     }
