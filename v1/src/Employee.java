@@ -2,7 +2,7 @@ public abstract class Employee {
     private int id;
     private String name;
 
-    public Employee(int id, String name) {
+    protected Employee(int id, String name) {
         setId(id);
         setName(name);
     }
@@ -28,4 +28,6 @@ public abstract class Employee {
         }
         this.name = name;
     }
+
+    public abstract int calculateMonthlyPay();
 }

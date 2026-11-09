@@ -43,4 +43,9 @@ public class FullTimeEmployee extends Employee {
     public void setBonusEligible(boolean bonusEligible) {
         this.bonusEligible = bonusEligible;
     }
+
+    @Override
+    public String toString() {
+        return "FullTimeEmployee [id=" + getId() + ", name=" + getName() + ", monthlySalary=" + monthlySalary + ", bonusAmount=" + bonusAmount + ", bonusEligible=" + bonusEligible + "]";
+    }
 }

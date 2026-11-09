@@ -49,4 +49,9 @@ public class Intern extends Employee {
         }
         this.hoursWorked = hoursWorked;
     }
+
+    @Override
+    public String toString() {
+        return "Intern [id=" + getId() + ", name=" + getName() + ", fixedMonthlyPay=" + fixedMonthlyPay + ", maxHours=" + maxHours + ", hoursWorked=" + hoursWorked + "]";
+    }
 }

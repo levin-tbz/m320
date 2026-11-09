@@ -33,4 +33,9 @@ public class PartTimeEmployee extends Employee {
         }
         this.hoursWorked = hoursWorked;
     }
+
+    @Override
+    public String toString() {
+        return "PartTimeEmployee [id=" + getId() + ", name=" + getName() + ", hourlyRate=" + hourlyRate + ", hoursWorked=" + hoursWorked + "]";
+    }
 }
