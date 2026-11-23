@@ -2,7 +2,15 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * Demonstrates creating planes and passengers and querying a timetable.
+ */
 public class Main {
+    /**
+     * Runs the timetable demonstration.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args) {
         Timetable timetable = new Timetable();
 
