@@ -1,3 +1,31 @@
 @startuml
-Alice -> Bob: test
+autonumber
+
+participant Main
+participant Plane
+participant Passenger
+participant Timetable
+
+Main -> Timetable: Create new Timetable
+Timetable --> Main: Return Timetable
+
+Main -> Plane: Create Plane ("329ej3")
+Plane --> Main: return Plane 1
+
+Main -> Passenger: Create Passenger ("sigma")
+Passenger --> Main: return Passenger 1
+Main -> Plane: add Passenger 1
+
+Main -> Passenger: Create Passenger ("max")
+Passenger --> Main: return Passenger 2
+Main -> Plane: add Passenger 2
+
+Main -> Timetable: addPlane(Plane 1)
+
+Main -> Plane: Create Plane ("foajfekj")
+Plane --> Main: return Plane 2
+Main -> Timetable: addPlane(Plane 2)
+
+Main -> Timetable: planesTakingoffOn(LocalDate.now())
+Timetable --> Main: Return List<Plane>
 @enduml
